@@ -20,14 +20,16 @@ body {
 }
 
 
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 
@@ -46,20 +48,22 @@ a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-family: 'Lato', sans-serif;
     font-size: 30px !important;
     color: #1d1d1d;
 }
 
 
-h2{
+h2 {
     font-family: 'Lato', sans-serif;
     font-size: 30px !important;
     color: #1d1d1d;
+    font: 33px sans-serif;
+    text-transform: uppercase;
 }
 
-p{
+p {
     font-size: 18px !important;
 }
 
@@ -83,12 +87,12 @@ p{
     min-height: 100vh;
 }
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 
 
-.fl-row{
+.fl-row {
     flex-direction: row;
 }
 
@@ -100,7 +104,7 @@ p{
     width: 40%;
 }
 
-.col-80{
+.col-80 {
     width: 80%;
 }
 
@@ -128,7 +132,7 @@ p{
     width: 27%;
 }
 
-.text-align-center{
+.text-align-center {
     text-align: center;
 }
 
@@ -168,20 +172,33 @@ p{
     flex-direction: column;
 }
 
-.margin-top50{
+.margin-top50 {
     margin-top: 50px;
 }
 
-.margin-top30{
+.margin-top30 {
     margin-top: 30px;
 }
 
-.margin-top40{
+.margin-top40 {
     margin-top: 40px;
 }
 
-.margin-bottom90{
+.margin-bottom90 {
     margin-bottom: 90px;
+}
+
+.padding20{
+    padding: 20px;
+}
+
+.mg-reset{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mb-reset{
+    margin-bottom: 0px;
 }
 
 .cursor {
@@ -193,25 +210,29 @@ p{
     font-size: 30px !important;
 }
 
-.orange{
+.bold-diplome {
+    font-weight: bold !important;
+}
+
+.orange {
     color: var(--orange);
 }
 
-.white{
+.white {
     color: white;
 }
 
-.fa-solid{
+.fa-solid {
     padding-right: 10px;
 }
 
-.fa-language{
+.fa-language {
     color: var(--orange);
     transition: .3s all;
     font-size: 25px;
 }
 
-.fa-language:hover{
+.fa-language:hover {
     color: var(--noir) !important;
 }
 
@@ -222,7 +243,7 @@ p{
     transition: .3s all;
 }
 
-.fa-circle-half-stroke:hover{
+.fa-circle-half-stroke:hover {
     color: var(--noir) !important;
 }
 
@@ -248,12 +269,12 @@ p{
     font-weight: 600;
     font-size: 25px;
     transition: .3s;
-    
+
 }
 
 .main-nav li {
     text-align: center;
-   
+
 }
 
 .logo {
@@ -274,7 +295,7 @@ p{
 
 
 
-.dark-mode-text{
+.dark-mode-text {
     color: #f1f1f1;
 }
 
@@ -359,7 +380,7 @@ p{
     position: relative;
 }
 
-img {
+.picture {
     display: block;
     height: 100%;
     position: absolute;
@@ -370,78 +391,82 @@ img {
     left: -100%;
 }
 
-.button{
+.button {
     transition: all 0.3s ease-in-out;
-    display:inline-block;
-    width:200px;
-    height:40px;
-    line-height:40px;
-    border:2px solid var(--noir);
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid var(--noir);
     background-color: var(--noir);
     text-transform: capitalize;
-    border-radius:3px;
-    position:relative;
-    overflow:hidden;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
 }
 
-.l1:before{
-    transition: all 0.1s linear;  
+.l1:before {
+    transition: all 0.1s linear;
     content: attr(value);
-    display:block; 
-  }
-  .l1:after {
-      transition: all 0.3s ease-in-out;  
-      content: "";
-      display: block;
-      background-color:var(--orange);
-      margin-top:0px;
-      height: 40px;
-  }
-  
-  .l1:hover:after{
-      margin-top:-40px;
-  }
-  .l1:hover{
-      color:white;
-  }
+    display: block;
+}
 
-  .items {
-    margin: 0 auto;
-    right: 50%;
-    transform: translate(50%,50%);
-  }
-  
-  .item {
-    width: 150px;
-    height: 150px;
+.l1:after {
+    transition: all 0.3s ease-in-out;
+    content: "";
+    display: block;
+    background-color: var(--orange);
+    margin-top: 0px;
+    height: 40px;
+}
+
+.l1:hover:after {
+    margin-top: -40px;
+}
+
+.l1:hover {
+    color: white;
+}
+
+.items {
+    height: 180px;
+    display: flex;
+}
+
+.item {
     position: relative;
-  }
-  
-  .mouse {
+    justify-content: center;
+    display: flex;
+}
+
+.mouse {
     width: 40px;
     height: 60px;
     border-radius: 20px;
     border: 3px solid var(--orange);
     position: absolute;
-    
-  }
-  .mouse:before, .mouse:after {
+
+}
+
+.mouse:before,
+.mouse:after {
     content: "";
     display: block;
     position: absolute;
-  }
-  
-  /* First */
-  .m-0:before {
+}
+
+/* First */
+.m-0:before {
     height: 30px;
     width: 4px;
     top: 10px;
     left: calc(50% - 2px);
     background: var(--noir);
     border-radius: 2px;
-  }
-  .m-0:after {
+}
+
+.m-0:after {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -449,25 +474,92 @@ img {
     left: calc(50% - 5px);
     background: var(--orange);
     -webkit-animation: m-0-ball 1.2s ease-in-out infinite;
-            animation: m-0-ball 1.2s ease-in-out infinite;
-  }
-  
-  @-webkit-keyframes m-0-ball {
-    40%, 60% {
-      transform: translateY(10px);
+    animation: m-0-ball 1.2s ease-in-out infinite;
+}
+
+@-webkit-keyframes m-0-ball {
+
+    40%,
+    60% {
+        transform: translateY(10px);
     }
-  }
-  
-  @keyframes m-0-ball {
-    40%, 60% {
-      transform: translateY(10px);
+}
+
+@keyframes m-0-ball {
+
+    40%,
+    60% {
+        transform: translateY(10px);
     }
-  }
-  
+}
 
 
 
-  /*  --------------- HEADER / PICTURE ------------------------*/
+
+/*  --------------- HEADER / PICTURE ------------------------*/
 
 
-  /*  --------------- ABOUT ------------------------*/
+/*  --------------- ABOUT ------------------------*/
+
+h2.no-background {
+    position: relative;
+    overflow: hidden;
+}
+
+h2.no-background span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+h2.no-background span:before,
+h2.no-background span:after {
+    content: "";
+    display: block;
+    width: 1000px;
+    position: absolute;
+    top: 0.73em;
+    border-top: 1px solid red;
+}
+
+h2.no-background span:before {
+    right: 100%;
+}
+
+h2.no-background span:after {
+    left: 100%;
+}
+
+h2.no-span {
+    display: table;
+    white-space: nowrap;
+}
+
+h2.no-span:before,
+h2.no-span:after {
+    border-top: 2px solid var(--orange);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+}
+
+h2.no-span:before {
+    right: 1.5%;
+}
+
+h2.no-span:after {
+    left: 1.5%;
+}
+
+.about-picture{
+    
+}
+
+
+/*  --------------- ABOUT ------------------------*/
