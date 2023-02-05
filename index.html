@@ -15,12 +15,19 @@
         href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b49a309cdc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
 <body class="dark-mode">
 
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <div class="container height-100 pos-rel">
+        
         <nav class="navbar margin-bottom90">
             <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
                 <i class="fa fa-bars"></i>
@@ -664,10 +671,10 @@
                             <p class="bold">CSS 3</p>
                         </div>
                         <div class="skill-front-end d-flex">
-                            <img src="assets/images/logo/js.png" alt="">    
+                            <img src="assets/images/logo/js.png" alt="">
                             <p class="bold">JS</p>
                         </div>
-                        
+
                     </div>
                     <div class="front-end d-flex justify-content-center">
                         <div class="skill-front-end d-flex">
@@ -677,23 +684,20 @@
                         <div class="skill-front-end d-flex">
                             <img src="assets/images/logo/mysql.png" alt="">
                             <p class="bold">CSS 3</p>
-                        </div>                
-                    </div>            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
     <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut(1200);
+        });
     </script>
 
-    <script src="assets/js/navbar.js"></script>
+
 </body>
 
 </html>
