@@ -399,7 +399,7 @@ ul {
 
 .container-circle {
     background: var(--orange);
-    border: 1px solid #000;
+    border: 2px solid #000;
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -682,6 +682,92 @@ h2.no-span:after {
 .skill img{
     width: 14%;
     padding: 15px;
+}
+
+.stats-container {
+    width: 50%;
+    margin: 30px auto;
+  }
+  
+  .stat-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    padding: 2%;
+  }
+  
+  .stat-item img {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+  }
+  
+  .stat-path,
+  .stat-back {
+    stroke-linecap: round;
+    stroke-width: 7;
+    fill: none;
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .stat-item {
+      width: 50%;
+    }
+  }
+  
+  /* Tooltip */
+  .tooltip .tooltiptext {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    background: #dddddd;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  .tooltip .tooltiptext span {
+    display: block;
+    color: #ffffff;
+  }
+  
+  .tooltip .tooltiptext:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent currentColor transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
 }
 
 
