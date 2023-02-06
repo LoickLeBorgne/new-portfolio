@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -36,19 +38,19 @@
             <input type="checkbox" id="chkToggle"></input>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="#" class="nav-links">Home</a>
+                    <a href="#" class="nav-links">Accueil</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Products</a>
+                    <a href="#" class="nav-links">À propos</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Store</a>
+                    <a href="#" class="nav-links">Compétences</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">About US</a>
+                    <a href="#" class="nav-links">Projet</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Blog</a>
+                    <a href="#" class="nav-links">Contact</a>
                 </li>
             </ul>
             <div class="dark__language">
@@ -65,12 +67,12 @@
                 <p class="margin-top30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Qui sit ad natus itaque ullam consequatur nostrum blanditiis sint ipsum alias commodi, assumenda
                     cumque, facilis explicabo veniam, necessitatibus fugit delectus? Nisi!</p>
-                <div class="button margin-top40 cursor">
-                    <a href="#" class="white l1">Continuer</a>
+                <div class="button-continue margin-top40 cursor l1">
+                    <a href="#" class="white">Continuer</a>
 
                 </div>
             </div>
-            <div class="container-circle col-100">
+            <div class="container-circle">
                 <div class="crop">
                     <svg class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"
@@ -662,7 +664,7 @@
                 <div class="stats-container row">
                     <div class="col-100">
                         <h2 class="text-align-center orange">Mes compétences</h2>
-                        <div class="test">
+                        <div class="table">
                             <h3>Front-end</h3>
                             <div class="stat-item tooltip" data-stat="85" data-soft="HTML 5" data-color="#ff8c42">
                                 <span class="tooltiptext"><span></span></span>
@@ -704,7 +706,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="test">
+                        <div class="table">
                             <h3>Back-end</h3>
                             <div class="stat-item tooltip" data-stat="20" data-soft="MySql" data-color="#fe721d">
                                 <span class="tooltiptext"><span></span></span>
@@ -742,7 +744,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="test">
+                        <div class="table">
                             <h3>Software</h3>
                             <div class="stat-item tooltip" data-stat="95" data-soft="Windows" data-color="#282828">
                                 <span class="tooltiptext"><span></span></span>
@@ -757,8 +759,8 @@
                                         d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80" />
                                 </svg>
                             </div>
-                            <div class="stat-item tooltip" data-stat="80"
-                                data-soft="Créer des serveur de jeux" data-color="#282828">
+                            <div class="stat-item tooltip" data-stat="80" data-soft="Créer des serveur de jeux"
+                                data-color="#282828">
                                 <span class="tooltiptext"><span></span></span>
                                 <img src="assets/images/logo/serverlinux.png" alt="">
                                 <svg viewbox="0 0 100 100" x="0px" y="0px" enable-background="new 0 0 100 100"
@@ -790,14 +792,166 @@
             </div>
         </div>
     </section>
+
+
+    <section class="project">
+        <h2 class="text-align-center orange">Mes projets réalisés</h2>
+        <div class="container">
+            <div class="row justify-content-center margin-top50">
+                <div class="post">
+                    <div class="header_post">
+                        <img src="assets/images/projets/projet1.PNG" alt="">
+                    </div>
+                    <div class="body_post">
+                        <div class="post_content">
+                            <h1>Rando Travels</h1>
+                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                            <p>Lagage utilisé : </p>
+                            <li>
+                                <p>- Html 5</p>
+                                <p>- CSS 3</p>
+                            </li>
+                            <div class="container_infos">
+                                <div class="postedBy">
+                                    <span>Auteur</span>
+                                    RikuuDev
+                                </div>
+                                <div class="container_tags">
+                                    <span>Lien</span>
+                                    <div class="tags">
+                                        <ul>
+                                            <li><a href="https://github.com/LoickLeBorgne/model-integration"
+                                                    target="_blank"><i class="fa-solid fa-link"></i></a></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header_post">
+                        <img src="assets/images/projets/projet1.PNG" alt="">
+                    </div>
+                    <div class="body_post">
+                        <div class="post_content">
+                            <h1>Rando Travels</h1>
+                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                            <p>Lagage utilisé : </p>
+                            <li>
+                                <p>- Html 5</p>
+                                <p>- CSS 3</p>
+                            </li>
+                            <div class="container_infos">
+                                <div class="postedBy">
+                                    <span>Auteur</span>
+                                    RikuuDev
+                                </div>
+                                <div class="container_tags">
+                                    <span>Lien</span>
+                                    <div class="tags">
+                                        <ul>
+                                            <li><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header_post">
+                        <img src="assets/images/projets/projet1.PNG" alt="">
+                    </div>
+                    <div class="body_post">
+                        <div class="post_content">
+                            <h1>Rando Travels</h1>
+                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                            <p>Lagage utilisé : </p>
+                            <li>
+                                <p>- Html 5</p>
+                                <p>- CSS 3</p>
+                            </li>
+                            <div class="container_infos">
+                                <div class="postedBy">
+                                    <span>Auteur</span>
+                                    RikuuDev
+                                </div>
+                                <div class="container_tags">
+                                    <span>Lien</span>
+                                    <div class="tags">
+                                        <ul>
+                                            <li><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="flexbox-col container">
+
+        <div class="form-wrapper">
+          <form id="form" method="post" name="emailform" action="email.php">
+           <h2 class="orange text-align-center">Me contacter</h2>
+            <div class="form-input-grid">
+              <div>
+                <p class="form-text">Nom <span class="orange">*</span></p>
+                <div class="form-input-wrapper flexbox-left">
+                    <i class="fa-solid fa-user"></i>
+                  <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label="" required>
+                </div>
+              </div>
+              <div>
+              <p class="form-text">Prénom <span class="orange">*</span></p>
+              <div class="form-input-wrapper flexbox-left">
+                <i class="fa-solid fa-user"></i>
+                <input class="form-input" id="pword" name="pword" type="password" placeholder="Prénom" aria-label="" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Email <span class="orange">*</span></p>
+            <div class="form-input-wrapper flexbox-left">
+                <i class="fa-solid fa-envelope"></i>
+              <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Message <span class="orange">*</span> (Max 500)</p>
+            <div id="textarea" class="form-input-wrapper flexbox-left-start">
+                <i class="fa-solid fa-message"></i>
+              <textarea class="form-input" id="message" name="message" placeholder="Votre message" maxlength="500" aria-label="" required></textarea>
+            </div>
+           </div>
+           <div class="form-input-max flexbox-left">
+             <div class="button-submit cursor button-wrapper l1-submit">
+               <button id="form-button" type="submit" ><a href="#" class="white ">Envoyer</a></button> 
+            </div>
+           </div>
+         </form>
+        </div>
+      
+      </main>
+
+
     <script src="assets/js/loading.js"></script>
     <script>
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut(400);
         });
     </script>
-
-
 </body>
 
 </html>
