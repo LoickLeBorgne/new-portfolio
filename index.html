@@ -22,12 +22,15 @@
     <title>Portfolio</title>
 </head>
 
-<body class="dark-mode">
-
+<body class="dark-mode" id="home">
+    <!---LOADING SCREEN---->
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
+    <!---LOADING SCREEN---->
 
+
+    <!---HEADER---->
     <div class="container height-100 pos-rel">
 
         <nav class="navbar margin-bottom90">
@@ -38,19 +41,19 @@
             <input type="checkbox" id="chkToggle"></input>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="#" class="nav-links">Accueil</a>
+                    <a href="#home" class="nav-links">Accueil</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">À propos</a>
+                    <a href="#about" class="nav-links">À propos</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Compétences</a>
+                    <a href="#about" class="nav-links">Compétences</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Projet</a>
+                    <a href="#project" class="nav-links">Projet</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Contact</a>
+                    <a href="#contact" class="nav-links">Contact</a>
                 </li>
             </ul>
             <div class="dark__language">
@@ -59,7 +62,9 @@
 
             </div>
         </nav>
+        <!---NAVBAR---->
 
+        <!---HEADER---->
         <div class="row justify-content-space-between align-items-center margin-top50">
             <div class="col-33">
                 <h1>Bonjour ! <br>
@@ -180,8 +185,10 @@
             </div>
         </div>
     </div>
+    <!---HEADER---->
 
-    <section class="about">
+    <!---ABOUT---->
+    <section class="about" id="about">
         <div class="container">
             <div class="row justify-content-space-between align-items-center margin-top50">
                 <div class="col-50">
@@ -196,8 +203,10 @@
                         reprehenderit natus, ratione ex, temporibus illo veritatis velit quo doloribus magnam tempore
                         rem dicta assumenda minima a rerum.</p>
                     <div class="about-logo">
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rikudev/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LoickLeBorgne" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="col-33 padding20">
@@ -632,8 +641,9 @@
                 </div>
             </div>
     </section>
+    <!---ABOUT---->
 
-
+    <!---SKILLS---->
     <section>
         <div class="container">
             <div class="row">
@@ -792,9 +802,10 @@
             </div>
         </div>
     </section>
+    <!---SKILLS---->
 
-
-    <section class="project">
+    <!---PROJECT---->
+    <section class="project" id="project">
         <h2 class="text-align-center orange">Mes projets réalisés</h2>
         <div class="container">
             <div class="row justify-content-center margin-top50">
@@ -820,8 +831,11 @@
                                     <span>Lien</span>
                                     <div class="tags">
                                         <ul>
-                                            <li><a href="https://github.com/LoickLeBorgne/model-integration"
-                                                    target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                                            <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                    target="_blank"><i
+                                                    class="fa-brands fa-github"></i></i></a></li>
 
                                         </ul>
                                     </div>
@@ -853,7 +867,11 @@
                                     <span>Lien</span>
                                     <div class="tags">
                                         <ul>
-                                            <li><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                                            <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                    target="_blank"><i
+                                                    class="fa-brands fa-github"></i></i></a></li>
 
                                         </ul>
                                     </div>
@@ -885,7 +903,11 @@
                                     <span>Lien</span>
                                     <div class="tags">
                                         <ul>
-                                            <li><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                                            <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                    target="_blank"><i
+                                                    class="fa-brands fa-github"></i></i></a></li>
 
                                         </ul>
                                     </div>
@@ -898,60 +920,65 @@
             </div>
         </div>
     </section>
+    <!---PROJECT---->
 
-
-    <main class="flexbox-col container">
-
+    <!---CONTACT---->
+    <main class="flexbox-col container" id="contact">
         <div class="form-wrapper">
-          <form id="form" method="post" name="emailform" action="email.php">
-           <h2 class="orange text-align-center">Me contacter</h2>
-            <div class="form-input-grid">
-              <div>
-                <p class="form-text">Nom <span class="orange">*</span></p>
-                <div class="form-input-wrapper flexbox-left">
-                    <i class="fa-solid fa-user"></i>
-                  <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label="" required>
+            <form id="form" method="post" name="emailform" action="email.php">
+                <h2 class="orange text-align-center">Me contacter</h2>
+                <div class="form-input-grid">
+                    <div>
+                        <p class="form-text">Nom <span class="orange">*</span></p>
+                        <div class="form-input-wrapper flexbox-left">
+                            <i class="fa-solid fa-user"></i>
+                            <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom"
+                                aria-label="" required>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="form-text">Prénom <span class="orange">*</span></p>
+                        <div class="form-input-wrapper flexbox-left">
+                            <i class="fa-solid fa-user"></i>
+                            <input class="form-input" id="pword" name="pword" type="password" placeholder="Prénom"
+                                aria-label="" required>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div>
-              <p class="form-text">Prénom <span class="orange">*</span></p>
-              <div class="form-input-wrapper flexbox-left">
-                <i class="fa-solid fa-user"></i>
-                <input class="form-input" id="pword" name="pword" type="password" placeholder="Prénom" aria-label="" required>
-              </div>
-            </div>
-          </div>
-          <div class="form-input-max">
-            <p class="form-text">Email <span class="orange">*</span></p>
-            <div class="form-input-wrapper flexbox-left">
-                <i class="fa-solid fa-envelope"></i>
-              <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
-            </div>
-          </div>
-          <div class="form-input-max">
-            <p class="form-text">Message <span class="orange">*</span> (Max 500)</p>
-            <div id="textarea" class="form-input-wrapper flexbox-left-start">
-                <i class="fa-solid fa-message"></i>
-              <textarea class="form-input" id="message" name="message" placeholder="Votre message" maxlength="500" aria-label="" required></textarea>
-            </div>
-           </div>
-           <div class="form-input-max flexbox-left">
-             <div class="button-submit cursor button-wrapper l1-submit">
-               <button id="form-button" type="submit" ><a href="#" class="white ">Envoyer</a></button> 
-            </div>
-           </div>
-         </form>
+                <div class="form-input-max">
+                    <p class="form-text">Email <span class="orange">*</span></p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""
+                            required>
+                    </div>
+                </div>
+                <div class="form-input-max">
+                    <p class="form-text">Message <span class="orange">*</span> (Max 500)</p>
+                    <div id="textarea" class="form-input-wrapper flexbox-left-start">
+                        <i class="fa-solid fa-message"></i>
+                        <textarea class="form-input" id="message" name="message" placeholder="Votre message"
+                            maxlength="500" aria-label="" required></textarea>
+                    </div>
+                </div>
+                <div class="form-input-max flexbox-left">
+                    <div class="button-submit cursor button-wrapper l1-submit">
+                        <button id="form-button" type="submit"><a href="#" class="white ">Envoyer</a></button>
+                    </div>
+                </div>
+            </form>
         </div>
-      
-      </main>
+    </main>
+    <!---CONTACT---->
 
-
+    <!---SCRIPT---->
     <script src="assets/js/loading.js"></script>
     <script>
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut(400);
         });
     </script>
+    <!---CONTACT---->
 </body>
 
 </html>
