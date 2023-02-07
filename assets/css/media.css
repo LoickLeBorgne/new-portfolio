@@ -1,4 +1,4 @@
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 1182px) {
     .row-md {
         flex-direction: column !important;
     }
@@ -72,18 +72,22 @@
         padding-bottom: 20px;
     }
 
+    .margin20{
+        margin: 20px;
+    }
 
     .margin-md-top0 {
         margin-top: 0;
+    }
+
+    .items{
+        display: none;
     }
 
     .text-md-center {
         text-align: center;
     }
 
-    .header-height {
-        height: auto;
-    }
 
     .container-circle {
         width: 300px;
@@ -96,9 +100,16 @@
     }
 
     .container .post .header_post img {
-        max-width: 150%;
+        max-width: 125%;
     }
 
+    .container .post .header_post{
+        width: 100%;
+    }
+    
+    .container .post{
+        margin: 5px;
+    }
     .items {
         height: 180px;
         bottom: 180px;
@@ -112,13 +123,29 @@
         font-size: 15px !important;
     }
 
-    .stats-container{
-        width: 30%;
-    }
 
     .table{
         display: inline;
         text-align: center;
+    }
+
+    .button-project{
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        width: 150px;
+        height: 30px;
+        line-height: 25px;
+        background-color: var(--noir);
+        text-transform: capitalize;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .button-project a{
+        font-size: 20px;
+        
     }
 
     h1 {
@@ -129,9 +156,6 @@
         font-size: 20px !important;
     }
     
-    h3 {
-        font-size: 15px !important;
-    }
     
     h4 {
         font-size: 20px !important;
@@ -174,7 +198,7 @@
         width: 80% !important;
     }
     .text-ms-center{
-        text-align: center;
+        text-align: center !important;
     }
 
     .col-ms-70 {
@@ -187,7 +211,7 @@
     }
 
     .align-items-ms{
-        align-items: center;
+        align-items: center !important;
     }
 
     .items{
@@ -200,7 +224,7 @@
     }
 
     .d-flex-reset{
-        display: inherit;
+        display: contents !important;
     }
 
     .container .post{
@@ -209,18 +233,32 @@
     }
 }
 
+@media screen and (max-width: 877px){
+    .svg-about{
+        width: 200px;
+        height: 200px;
+    }
+    .row-ms-gd{
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 1440px){
+   .container{
+    max-width: 1100px;
+   }
+}
+
 
 @media screen and (max-width: 653px){
-    .stat-item{
-        width: 31.33%;
+    .table{
+        display: inherit !important;
     }
 
     .col-sm-70{
         width: 70% !important;
-    }
-
-    .stat-item{
-        width: 50% !important;
     }
 
     .col-sm-80{

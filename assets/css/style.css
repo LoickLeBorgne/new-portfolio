@@ -63,7 +63,6 @@ h2 {
     font-size: 30px !important;
     color: #1d1d1d;
     font: 33px;
-    text-transform: uppercase;
 }
 
 p {
@@ -323,41 +322,6 @@ ul {
     padding: 15px;
 }
 
-.stats-container {
-    width: 50%;
-    margin: 30px auto;
-}
-
-.stat-item {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    width: 30%;
-    padding: 2%;
-}
-
-.stat-item img {
-    position: absolute;
-    width: 30%;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-}
-
-.stat-path,
-.stat-back {
-    stroke-linecap: round;
-    stroke-width: 7;
-    fill: none;
-}
-
-@media only screen and (max-width: 580px) {
-    .stat-item {
-        width: 50%;
-    }
-}
 
 
 .tooltip .tooltiptext {
@@ -403,8 +367,7 @@ ul {
 
 
 .table {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
     width: 100%;
     align-items: center;
 }
@@ -893,6 +856,21 @@ textarea::-webkit-scrollbar-thumb {
 .l1-submit:hover {
     color: white;
 }
+
+.button-project{
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--noir);
+    text-transform: capitalize;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
 
 /* Media Rules */
 @media only screen and (max-width: 1660px) {
