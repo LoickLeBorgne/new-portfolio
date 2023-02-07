@@ -1,0 +1,278 @@
+@media screen and (max-width: 1156px) {
+    .row-md {
+        flex-direction: column !important;
+    }
+
+    .col-md-100 {
+        width: 100% !important;
+    }
+
+    .col-75 {
+        width: 100%;
+    }
+
+    .col-md-80 {
+        width: 80% !important;
+    }
+
+    .col-md-60 {
+        width: 60% !important;
+    }
+
+    .col-md-50 {
+        width: 50% !important;
+    }
+
+    .col-md-70 {
+        width: 70% !important;
+    }
+
+    .reset-ml {
+        margin-left: 0;
+    }
+
+    .reset-mr {
+        margin-right: 0;
+    }
+
+    .reset-margin-md-top {
+        margin-top: 0;
+    }
+
+    .reset-pl {
+        padding-left: inherit;
+    }
+
+    .reset-pr {
+        padding-right: inherit;
+    }
+
+    .mb-md-40 {
+        margin-bottom: 40px;
+    }
+
+    .m-t-md-160 {
+        margin-top: 160px;
+    }
+
+    .container-md {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .pl-md-10 {
+        padding-left: 10%;
+    }
+
+    .pr-md-10 {
+        padding-right: 10%;
+    }
+
+    .pd-bt-20{
+        padding-bottom: 20px;
+    }
+
+
+    .margin-md-top0 {
+        margin-top: 0;
+    }
+
+    .text-md-center {
+        text-align: center;
+    }
+
+    .header-height {
+        height: auto;
+    }
+
+    .container-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .svg-about {
+        width: 250px;
+        height: 250px;
+    }
+
+    .container .post .header_post img {
+        max-width: 150%;
+    }
+
+    .items {
+        height: 180px;
+        bottom: 180px;
+    }
+
+    .skill img{
+        width: 11%;
+    }
+
+    .skill p{
+        font-size: 15px !important;
+    }
+
+    .stats-container{
+        width: 30%;
+    }
+
+    .table{
+        display: inline;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+    
+    h2 {
+        font-size: 20px !important;
+    }
+    
+    h3 {
+        font-size: 15px !important;
+    }
+    
+    h4 {
+        font-size: 20px !important;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 653px) {
+    h1 {
+        font-size: 20px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4 {
+        font-size: 10px !important;
+    }
+
+    .row-ms {
+        flex-direction: column !important;
+    }
+    
+    .pd-top-ms-20{
+        padding-top:  20px;
+    }
+
+    .col-ms-100 {
+        width: 100% !important;
+    }
+
+    .col-ms-80 {
+        width: 80% !important;
+    }
+    .text-ms-center{
+        text-align: center;
+    }
+
+    .col-ms-70 {
+        width: 70% !important;
+    }
+
+    .container-ms{
+        max-width: 400px;
+        max-width: auto;
+    }
+
+    .align-items-ms{
+        align-items: center;
+    }
+
+    .items{
+        display: none;
+    }
+
+
+    .col-ms-50 {
+        width: 50% !important;
+    }
+
+    .d-flex-reset{
+        display: inherit;
+    }
+
+    .container .post{
+        height: 530px;
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 653px){
+    .stat-item{
+        width: 31.33%;
+    }
+
+    .col-sm-70{
+        width: 70% !important;
+    }
+
+    .stat-item{
+        width: 50% !important;
+    }
+
+    .col-sm-80{
+        width: 80% !important;
+    }
+
+    .pd-resert-ms{
+        padding: 0;
+    }
+    .button-continue{
+        width: 130px;
+        font-size: 20px !important;
+    }
+
+    .test{
+        margin: 0;
+    }
+
+    .svg-about{
+        width: 180px;
+        height: 180px;
+        margin-top: 25px;
+    }
+
+    .text-sm-center{
+        text-align: center;
+    }
+
+    .test ul{
+        padding-left: 0px;
+    }
+    .picture{
+        width: 100%;
+    }
+    .skill{
+        border-right-width: 0px
+    }
+    .m-t-md-160{
+        margin-top: 70px !important;
+    }
+    #menuToggle{
+        top: 30px !important;
+    left: 10px !important;
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+}
+
+

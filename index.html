@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -29,44 +30,42 @@
     </div>
     <!---LOADING SCREEN---->
 
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+
 
     <!---HEADER---->
-    <div class="container height-100 pos-rel">
-
-        <nav class="navbar margin-bottom90">
-            <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-                <i class="fa fa-bars"></i>
-            </label>
-            <a href="#" class="logo bold-pseudo">RikuuDev</a>
-            <input type="checkbox" id="chkToggle"></input>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#home" class="nav-links">Accueil</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-links">À propos</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-links">Compétences</a>
-                </li>
-                <li>
-                    <a href="#project" class="nav-links">Projet</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-links">Contact</a>
-                </li>
-            </ul>
-            <div class="dark__language">
-                <button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke cursor"></i></button>
-                <i class="fa-solid fa-language cursor"></i>
-
-            </div>
-        </nav>
+    <div class="container  container-md height-100 pos-rel ">
         <!---NAVBAR---->
 
         <!---HEADER---->
-        <div class="row justify-content-space-between align-items-center margin-top50">
-            <div class="col-33">
+        <div
+            class="row row-ms text-ms-center justify-content-space-between align-items-center margin-top50 m-t-md-160 reset-margin-md-top">
+            <div class="col-33 col-md-50 col-sm-80">
                 <h1>Bonjour ! <br>
                     Je suis Loïck Le Borgne, développeur web <span class="orange">full-stack !</span></h1>
                 <p class="margin-top30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -75,6 +74,13 @@
                 <div class="button-continue margin-top40 cursor l1">
                     <a href="#" class="white">Continuer</a>
 
+                </div>
+                <div class="row">
+                    <div class="items col-100 pos-abso justify-content-center align-items-center margin-top50">
+                        <div class="item">
+                            <div class="mouse m-0"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container-circle">
@@ -175,41 +181,33 @@
                     <img src="assets/images/cartoon.png" alt="" class="picture" />
                 </div>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="items col-100 pos-abso justify-content-center align-items-center">
-                <div class="item">
-                    <div class="mouse m-0"></div>
-                </div>
-            </div>
         </div>
     </div>
     <!---HEADER---->
 
     <!---ABOUT---->
     <section class="about" id="about">
-        <div class="container">
-            <div class="row justify-content-space-between align-items-center margin-top50">
-                <div class="col-50">
+        <div class="container container-md">
+            <div class="row row-ms text-sm-center justify-content-space-between align-items-center margin-top50 pd-bt-20 pd-top-ms-20">
+                <div class="col-50 col-sm-70">
                     <h2>A propos de RikuuDev</h2>
-                    <p class="margin-top30 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                    <p class="margin-top30 text-justify text-sm-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
                         cupiditate
                         iusto? Inventore nihil numquam corrupti eius iusto repellat ab atque aliquam molestias vel amet
                         odit autem,
                         necessitatibus eligendi voluptates veritatis.</p>
-                    <p class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
+                    <p class="text-justify text-sm-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
                         officiis ipsam
                         reprehenderit natus, ratione ex, temporibus illo veritatis velit quo doloribus magnam tempore
                         rem dicta assumenda minima a rerum.</p>
-                    <div class="about-logo">
+                    <div class="about-logo text-ms-center ">
                         <a href="https://www.linkedin.com/in/rikudev/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
+                                class="fa-brands fa-linkedin "></i></a>
                         <a href="https://github.com/LoickLeBorgne" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
+                                class="fa-brands fa-github "></i></a>
                     </div>
                 </div>
-                <div class="col-33 padding20">
+                <div class="col-33 col-ms-100  padding20 pd-resert-ms">
                     <svg class="svg-about" xmlns="http://www.w3.org/2000/svg" version="1.1" width="400px" height="400px"
                         viewBox="0 0 200 200" style="overflow:hidden!important;">
                         <defs id="SvgjsDefs1002">
@@ -645,25 +643,25 @@
 
     <!---SKILLS---->
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-100">
+        <div class="container container-md">
+            <div class="row row-ms">
+                <div class="col-100 col-md-70 col-ms-100 text-ms-center">
                     <h2 class="orange">Que puis-je faire?</h2>
-                    <div class="skill d-flex align-items-center col-80">
+                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
                         <img src="assets/images/logo/server.png" alt="">
                         <div>
                             <h3 class="orange bold">Back-end</h3>
                             <p class="bold">Développement d'une application web / mobile</p>
                         </div>
                     </div>
-                    <div class="skill d-flex align-items-center col-80">
+                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
                         <img src="assets/images/logo/front-end.png" alt="">
                         <div>
                             <h3 class="orange">Front-end</h3>
                             <p class="bold">Site vitrine</p>
                         </div>
                     </div>
-                    <div class="skill d-flex align-items-center col-80">
+                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
                         <img src="assets/images/logo/seo.png" alt="">
                         <div>
                             <h3 class="orange">Référencement naturel </h3>
@@ -671,12 +669,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="stats-container row">
-                    <div class="col-100">
+                <div class="stats-container row col-ms-50 ">
+                    <div class="col-100 ">
                         <h2 class="text-align-center orange">Mes compétences</h2>
                         <div class="table">
                             <h3>Front-end</h3>
-                            <div class="stat-item tooltip" data-stat="85" data-soft="HTML 5" data-color="#ff8c42">
+                            <div class="stat-item  tooltip" data-stat="85" data-soft="HTML 5" data-color="#ff8c42">
                                 <span class="tooltiptext"><span></span></span>
                                 <img src="assets/images/logo/html.png" alt="">
                                 <svg viewbox="0 0 100 100" x="0px" y="0px" enable-background="new 0 0 100 100"
@@ -805,111 +803,203 @@
     <!---SKILLS---->
 
     <!---PROJECT---->
+
+
+
+
+
+
+
     <section class="project" id="project">
         <h2 class="text-align-center orange">Mes projets réalisés</h2>
-        <div class="container">
-            <div class="row justify-content-center margin-top50">
-                <div class="post">
-                    <div class="header_post">
-                        <img src="assets/images/projets/projet1.PNG" alt="">
-                    </div>
-                    <div class="body_post">
-                        <div class="post_content">
-                            <h1>Rando Travels</h1>
-                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
-                            <p>Lagage utilisé : </p>
-                            <li>
-                                <p>- Html 5</p>
-                                <p>- CSS 3</p>
-                            </li>
-                            <div class="container_infos">
-                                <div class="postedBy">
-                                    <span>Auteur</span>
-                                    RikuuDev
-                                </div>
-                                <div class="container_tags">
-                                    <span>Lien</span>
-                                    <div class="tags">
-                                        <ul>
-                                            <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
-                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                    target="_blank"><i
-                                                    class="fa-brands fa-github"></i></i></a></li>
-
-                                        </ul>
+        <div class="container container-md">
+            <div class="test">
+                <ul class="tab-content row justify-content-space-around">
+                    <li class="active cursor button-continue l1" id="nav-tab1"><a class="grey">Front-end</a></li>
+                    <li class="inactive cursor button-continue l1" id="nav-tab2"><a class="grey">Back-end</a></li>
+                </ul>
+            </div>
+            <div class="tab" id="tab1">
+                <div class="row row-ms justify-content-center align-items-ms">
+                    <div class="post">
+                        <div class="header_post">
+                            <img src="assets/images/projets/projet1.PNG" alt="">
+                        </div>
+                        <div class="body_post">
+                            <div class="post_content">
+                                <h1>Rando Travels</h1>
+                                <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                                <p>Lagage utilisé : </p>
+                                <li>
+                                    <p>- Html 5</p>
+                                    <p>- CSS 3</p>
+                                </li>
+                                <div class="container_infos">
+                                    <div class="postedBy">
+                                        <span>Auteur</span>
+                                        RikuuDev
                                     </div>
+                                    <div class="container_tags">
+                                        <span>Lien</span>
+                                        <div class="tags">
+                                            <ul>
+                                                <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                </li>
 
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="header_post">
+                            <img src="assets/images/projets/projet1.PNG" alt="">
+                        </div>
+                        <div class="body_post">
+                            <div class="post_content">
+                                <h1>Rando Travels</h1>
+                                <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                                <p>Lagage utilisé : </p>
+                                <li>
+                                    <p>- Html 5</p>
+                                    <p>- CSS 3</p>
+                                </li>
+                                <div class="container_infos">
+                                    <div class="postedBy">
+                                        <span>Auteur</span>
+                                        RikuuDev
+                                    </div>
+                                    <div class="container_tags">
+                                        <span>Lien</span>
+                                        <div class="tags">
+                                            <ul>
+                                                <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="header_post">
+                            <img src="assets/images/projets/projet1.PNG" alt="">
+                        </div>
+                        <div class="body_post">
+                            <div class="post_content">
+                                <h1>Rando Travels</h1>
+                                <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                                <p>Lagage utilisé : </p>
+                                <li>
+                                    <p>- Html 5</p>
+                                    <p>- CSS 3</p>
+                                </li>
+                                <div class="container_infos">
+                                    <div class="postedBy">
+                                        <span>Auteur</span>
+                                        RikuuDev
+                                    </div>
+                                    <div class="container_tags">
+                                        <span>Lien</span>
+                                        <div class="tags">
+                                            <ul>
+                                                <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="post">
-                    <div class="header_post">
-                        <img src="assets/images/projets/projet1.PNG" alt="">
-                    </div>
-                    <div class="body_post">
-                        <div class="post_content">
-                            <h1>Rando Travels</h1>
-                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
-                            <p>Lagage utilisé : </p>
-                            <li>
-                                <p>- Html 5</p>
-                                <p>- CSS 3</p>
-                            </li>
-                            <div class="container_infos">
-                                <div class="postedBy">
-                                    <span>Auteur</span>
-                                    RikuuDev
-                                </div>
-                                <div class="container_tags">
-                                    <span>Lien</span>
-                                    <div class="tags">
-                                        <ul>
-                                            <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
-                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                    target="_blank"><i
-                                                    class="fa-brands fa-github"></i></i></a></li>
-
-                                        </ul>
+            </div>
+            <div class="tab" id="tab2">
+                <div class="row row-m justify-content-center">
+                    <div class="post">
+                        <div class="header_post">
+                            <img src="assets/images/projets/projet1.PNG" alt="">
+                        </div>
+                        <div class="body_post">
+                            <div class="post_content">
+                                <h1>Rando Travels</h1>
+                                <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                                <p>Lagage utilisé : </p>
+                                <li>
+                                    <p>- Html 5</p>
+                                    <p>- CSS 3</p>
+                                </li>
+                                <div class="container_infos">
+                                    <div class="postedBy">
+                                        <span>Auteur</span>
+                                        RikuuDev
                                     </div>
+                                    <div class="container_tags">
+                                        <span>Lien</span>
+                                        <div class="tags">
+                                            <ul>
+                                                <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                    <a href="https://github.com/LoickLeBorgne/model-integration"
+                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                </li>
 
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="post">
-                    <div class="header_post">
-                        <img src="assets/images/projets/projet1.PNG" alt="">
-                    </div>
-                    <div class="body_post">
-                        <div class="post_content">
-                            <h1>Rando Travels</h1>
-                            <p>Création d'un site web responsiv à partir d'une maquette.</p>
-                            <p>Lagage utilisé : </p>
-                            <li>
-                                <p>- Html 5</p>
-                                <p>- CSS 3</p>
-                            </li>
-                            <div class="container_infos">
-                                <div class="postedBy">
-                                    <span>Auteur</span>
-                                    RikuuDev
-                                </div>
-                                <div class="container_tags">
-                                    <span>Lien</span>
-                                    <div class="tags">
-                                        <ul>
-                                            <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                    target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <div class="post">
+                        <div class="header_post">
+                            <img src="assets/images/projets/projet1.PNG" alt="">
+                        </div>
+                        <div class="body_post">
+                            <div class="post_content">
+                                <h1>Rando Travels</h1>
+                                <p>Création d'un site web responsiv à partir d'une maquette.</p>
+                                <p>Lagage utilisé : </p>
+                                <li>
+                                    <p>- Html 5</p>
+                                    <p>- CSS 3</p>
+                                </li>
+                                <div class="container_infos">
+                                    <div class="postedBy">
+                                        <span>Auteur</span>
+                                        RikuuDev
+                                    </div>
+                                    <div class="container_tags">
+                                        <span>Lien</span>
+                                        <div class="tags">
+                                            <ul>
+                                                <li><a href="https://loickleborgne.github.io/model-integration/"
+                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                    target="_blank"><i
-                                                    class="fa-brands fa-github"></i></i></a></li>
+                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                </li>
 
-                                        </ul>
+                                            </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -918,6 +1008,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!---PROJECT---->
 
@@ -976,6 +1067,57 @@
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut(400);
         });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("nav-orange container-min");
+
+                $("nav, fadein").addClass("fadein");
+            }
+            else {
+                $("nav").removeClass("nav-orange container-min fadein");
+                $("nav, fadein").removeClass("fadein");
+
+            }
+        });
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function (i) {
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window > bottom_of_element) {
+
+                        $(this).animate({ 'opacity': '1' }, 1300);
+
+                    }
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            $('.test ul li.inactive').each(function (index, el) {
+                var tabID = el.id.split('-')[1];
+                $('.tab#' + tabID).hide();
+            });
+        });
+
+        $('.test').delegate('.inactive', 'click', function (event) {
+            var selectedTab = this.id.split('-')[1];
+            console.log(selectedTab);
+            document.location.hash = selectedTab;
+            $('.tab:visible').fadeOut('fast', function () {
+                $('.tab#' + selectedTab).fadeIn('fast');
+            });
+            var $this = $(this);
+            $this.removeClass('inactive').addClass("active");
+            $this.siblings().addClass('inactive').removeClass('active');
+        });
+
     </script>
     <!---CONTACT---->
 </body>
