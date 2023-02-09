@@ -1,6 +1,21 @@
 @media screen and (max-width: 1182px) {
+    #menuToggle{
+        left: 10px;
+    }
+
+    .row-md-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
     .row-md {
         flex-direction: column !important;
+    }
+
+    .height-md{
+        height: 100vh;
     }
 
     .col-md-100 {
@@ -90,8 +105,12 @@
 
 
     .container-circle {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height:280px;
+    }
+
+    .picture{
+        width: 100%;
     }
 
     .svg-about {
@@ -240,7 +259,7 @@
 
 @media screen and (max-width: 877px){
     h1,h2,h3,h4{
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
     .svg-about{
         width: 200px;
@@ -256,7 +275,7 @@
     }
 
     .skill p{
-        font-size: 13px !important;
+        font-size: 15px !important;
     }
 }
 
@@ -279,6 +298,14 @@
 
     .col-sm-80{
         width: 80% !important;
+    }
+
+    .col-sm-100{
+        width: 100% !important;
+    }
+
+    .col-sm-85{
+        width: 85% !important;
     }
 
     .pd-resert-ms{

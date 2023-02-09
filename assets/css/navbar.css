@@ -8,6 +8,12 @@
     user-select: none;
 }
 
+.navbar{
+    background-color: var(--orange);
+}
+
+
+
 #menuToggle a {
     text-decoration: none;
     color: var(--gris);  

@@ -60,8 +60,8 @@
         <!---NAVBAR---->
 
         <!---HEADER---->
-        <div class="row row-ms text-ms-center justify-content-space-between align-items-center margin-top50 m-t-md-160 reset-margin-md-top margin20">
-            <div class="col-33 col-md-50 col-sm-80 margin20">
+        <div class="row height-md row-md-header row-ms text-ms-center justify-content-space-between align-items-center margin-top50 m-t-md-160 reset-margin-md-top margin20">
+            <div class="col-33 col-md-100 col-sm-100 margin20">
                 <h1>Bonjour ! <br>
                     Je suis Loïck Le Borgne, développeur web <span class="orange">full-stack !</span></h1>
                 <p class="margin-top30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -186,7 +186,7 @@
         <div class="container container-md">
             <div
                 class="row row-ms text-sm-center justify-content-space-between align-items-center margin-top50 pd-bt-20 pd-top-ms-20 margin20">
-                <div class="col-50 col-sm-70">
+                <div class="col-50 col-sm-85">
                     <h2>A propos de RikuuDev</h2>
                     <p class="margin-top30 text-justify text-sm-center">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Ipsum,
@@ -969,57 +969,6 @@
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut(400);
         });
-    </script>
-    <script>
-        $(window).scroll(function () {
-            if ($(window).scrollTop()) {
-                $("nav").addClass("nav-orange container-min");
-
-                $("nav, fadein").addClass("fadein");
-            }
-            else {
-                $("nav").removeClass("nav-orange container-min fadein");
-                $("nav, fadein").removeClass("fadein");
-
-            }
-        });
-
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                $('.fadein').each(function (i) {
-                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    if (bottom_of_window > bottom_of_element) {
-
-                        $(this).animate({ 'opacity': '1' }, 1300);
-
-                    }
-                });
-
-            });
-
-        });
-
-        $(document).ready(function () {
-            $('.test ul li.inactive').each(function (index, el) {
-                var tabID = el.id.split('-')[1];
-                $('.tab#' + tabID).hide();
-            });
-        });
-
-        $('.test').delegate('.inactive', 'click', function (event) {
-            var selectedTab = this.id.split('-')[1];
-            console.log(selectedTab);
-            document.location.hash = selectedTab;
-            $('.tab:visible').fadeOut('fast', function () {
-                $('.tab#' + selectedTab).fadeIn('fast');
-            });
-            var $this = $(this);
-            $this.removeClass('inactive').addClass("active");
-            $this.siblings().addClass('inactive').removeClass('active');
-        });
-
     </script>
     <!---CONTACT---->
 </body>
