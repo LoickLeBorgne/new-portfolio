@@ -11,8 +11,8 @@
         width: 100%;
     }
 
-    .col-md-80 {
-        width: 80% !important;
+    .col-md-90 {
+        width: 90% !important;
     }
 
     .col-md-60 {
@@ -115,15 +115,6 @@
         bottom: 180px;
     }
 
-    .skill img{
-        width: 11%;
-    }
-
-    .skill p{
-        font-size: 15px !important;
-    }
-
-
     .table{
         display: inline;
         text-align: center;
@@ -184,6 +175,7 @@
 
     .row-ms {
         flex-direction: column !important;
+        align-items: center;
     }
     
     .pd-top-ms-20{
@@ -192,6 +184,10 @@
 
     .col-ms-100 {
         width: 100% !important;
+    }
+
+    .col-ms-90{
+        width: 90% !important;
     }
 
     .col-ms-80 {
@@ -224,16 +220,28 @@
     }
 
     .d-flex-reset{
-        display: contents !important;
+        justify-content: center;
+    flex-direction: column;
     }
 
     .container .post{
-        height: 530px;
-        width: 250px;
+        height: 500px;
+        width: 350px;
+    }
+
+    .container .post .header_post{
+        background: #ffffff;
+    }
+
+    .font-icon{
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 877px){
+    h1,h2,h3,h4{
+        font-size: 20px !important;
+    }
     .svg-about{
         width: 200px;
         height: 200px;
@@ -241,6 +249,14 @@
     .row-ms-gd{
        flex-direction: column;
        align-items: center;
+    }
+    
+    .skill img{
+        width: 10%;
+    }
+
+    .skill p{
+        font-size: 13px !important;
     }
 }
 
@@ -276,6 +292,10 @@
     .test{
         margin: 0;
     }
+    
+    .padding-3{
+        padding: 0;
+    }
 
     .svg-about{
         width: 180px;
@@ -293,11 +313,8 @@
     .picture{
         width: 100%;
     }
-    .skill{
-        border-right-width: 0px
-    }
     .m-t-md-160{
-        margin-top: 70px !important;
+        margin-top: 50px !important;
     }
     #menuToggle{
         top: 30px !important;

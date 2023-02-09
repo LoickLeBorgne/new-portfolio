@@ -37,20 +37,17 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="#">
-                    <li>Home</li>
+                <a href="#home">
+                    <li>Accueil</li>
                 </a>
-                <a href="#">
-                    <li>About</li>
+                <a href="#about">
+                    <li>A propos</li>
                 </a>
-                <a href="#">
-                    <li>Info</li>
+                <a href="#project">
+                    <li>Mes projets</li>
                 </a>
-                <a href="#">
+                <a href="#contact">
                     <li>Contact</li>
-                </a>
-                <a href="https://erikterwan.com/" target="_blank">
-                    <li>Show me more</li>
                 </a>
             </ul>
         </div>
@@ -59,12 +56,11 @@
 
 
     <!---HEADER---->
-    <div class="container  container-md height-100 pos-rel ">
+    <div class="container  container-md height-100 pos-rel" id="home">
         <!---NAVBAR---->
 
         <!---HEADER---->
-        <div
-            class="row row-ms text-ms-center justify-content-space-between align-items-center margin-top50 m-t-md-160 reset-margin-md-top">
+        <div class="row row-ms text-ms-center justify-content-space-between align-items-center margin-top50 m-t-md-160 reset-margin-md-top margin20">
             <div class="col-33 col-md-50 col-sm-80 margin20">
                 <h1>Bonjour ! <br>
                     Je suis Loïck Le Borgne, développeur web <span class="orange">full-stack !</span></h1>
@@ -189,7 +185,7 @@
     <section class="about" id="about">
         <div class="container container-md">
             <div
-                class="row row-ms text-sm-center justify-content-space-between align-items-center margin-top50 pd-bt-20 pd-top-ms-20">
+                class="row row-ms text-sm-center justify-content-space-between align-items-center margin-top50 pd-bt-20 pd-top-ms-20 margin20">
                 <div class="col-50 col-sm-70">
                     <h2>A propos de RikuuDev</h2>
                     <p class="margin-top30 text-justify text-sm-center">Lorem ipsum dolor sit amet consectetur
@@ -646,36 +642,68 @@
 
     <!---SKILLS---->
     <section>
-        <div class="container container-md">
+        <div class="container container-md margin20">
             <div class="row row-ms">
-                <div class="col-100 col-md-80 col-ms-100 text-ms-center">
+                <div class="col-70 col-md-80 col-ms-90 text-ms-center padding-3">
                     <h2 class="orange">Que puis-je faire?</h2>
-                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
-                        <img src="assets/images/logo/server.png" alt="">
+
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/design.png" alt="">
+                        <div>
+                            <h3 class="orange">Front-end</h3>
+                            <p class="bold">Intégration de maquette, Design</p>
+                        </div>
+                    </div>
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/back-end.png" alt="" srcset="">
                         <div>
                             <h3 class="orange bold">Back-end</h3>
                             <p class="bold">Développement d'une application web / mobile</p>
                         </div>
                     </div>
-                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
-                        <img src="assets/images/logo/front-end.png" alt="">
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/responsive.png" alt="">
                         <div>
-                            <h3 class="orange">Front-end</h3>
-                            <p class="bold">Site vitrine</p>
+                            <h3 class="orange">Responsive</h3>
+                            <p class="bold">Site web adapté pour tout les types d'écrans</p>
                         </div>
                     </div>
-                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
                         <img src="assets/images/logo/seo.png" alt="">
                         <div>
                             <h3 class="orange">Référencement naturel </h3>
                             <p class="bold">Optimisation pour les moteurs de recherche</p>
                         </div>
                     </div>
-                    <div class="skill d-flex d-flex-reset align-items-center col-80 col-ms-100">
-                        <img src="assets/images/logo/seo.png" alt="">
+                </div>
+                <div class="col-70 col-md-80 col-ms-90 text-ms-center padding-3">
+                    <h2 class="orange">Langages</h2>
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/design.png" alt="">
                         <div>
-                            <h3 class="orange">Référencement naturel </h3>
-                            <p class="bold">Optimisation pour les moteurs de recherche</p>
+                            <h3 class="orange bold">Front-End</h3>
+                           <p class="bold">HTML 5, CSS 3, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/back-end.png" alt="" srcset="">
+                        <div>
+                            <h3 class="orange">Back-End</h3>
+                            <p class="bold">PhP, Symfony, MySql</p>
+                        </div>
+                    </div>
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/cms.png" alt="" srcset="">
+                        <div>
+                            <h3 class="orange">CMS </h3>
+                            <p class="bold">WordPress, MineWeb</p>
+                        </div>
+                    </div>
+                    <div class="skill d-flex d-flex-reset align-items-center col-ms-100">
+                        <img src="assets/images/logo/framework.png" alt="">
+                        <div>
+                            <h3 class="orange">FrameWork</h3>
+                            <p class="bold">Bootstrap 5, Bulma</p>
                         </div>
                     </div>
                 </div>
@@ -685,13 +713,6 @@
     <!---SKILLS---->
 
     <!---PROJECT---->
-
-
-
-
-
-
-
     <section class="project" id="project">
         <h2 class="text-align-center orange">Mes projets réalisés</h2>
         <div class="container container-md">
@@ -702,7 +723,7 @@
                 </ul>
             </div>
             <div class="tab" id="tab1">
-                <div class="row row-ms row-ms-gd justify-content-center align-items-ms">
+                <div class="row row-ms row-ms-gd justify-content-center align-items-ms margin20">
                     <div class="post">
                         <div class="header_post">
                             <img src="assets/images/projets/projet1.PNG" alt="">
@@ -726,9 +747,9 @@
                                         <div class="tags">
                                             <ul>
                                                 <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                        target="_blank"><i class="fa-solid font-icon fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                        target="_blank"><i class="fa-brands font-icon fa-github"></i></i></a>
                                                 </li>
 
                                             </ul>
@@ -762,9 +783,9 @@
                                         <div class="tags">
                                             <ul>
                                                 <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                        target="_blank"><i class="fa-solid font-icon fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                        target="_blank"><i class="fa-brands font-icon fa-github"></i></i></a>
                                                 </li>
 
                                             </ul>
@@ -798,9 +819,9 @@
                                         <div class="tags">
                                             <ul>
                                                 <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                        target="_blank"><i class="fa-solid font-icon fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                        target="_blank"><i class="fa-brands font-icon fa-github"></i></i></a>
                                                 </li>
 
                                             </ul>
@@ -814,7 +835,7 @@
                 </div>
             </div>
             <div class="tab" id="tab2">
-                <div class="row row-m justify-content-center">
+                <div class="row row-ms justify-content-center">
                     <div class="post">
                         <div class="header_post">
                             <img src="assets/images/projets/projet1.PNG" alt="">
@@ -838,9 +859,9 @@
                                         <div class="tags">
                                             <ul>
                                                 <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                        target="_blank"><i class="fa-solid font-icon fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                        target="_blank"><i class="fa-brands font-icon fa-github"></i></i></a>
                                                 </li>
 
                                             </ul>
@@ -874,9 +895,9 @@
                                         <div class="tags">
                                             <ul>
                                                 <li><a href="https://loickleborgne.github.io/model-integration/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></a>
+                                                        target="_blank"><i class="fa-solid font-icon fa-link"></i></a>
                                                     <a href="https://github.com/LoickLeBorgne/model-integration"
-                                                        target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                                                        target="_blank"><i class="fa-brands font-icon fa-github"></i></i></a>
                                                 </li>
 
                                             </ul>
@@ -890,7 +911,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!---PROJECT---->
 
