@@ -995,3 +995,8 @@ textarea::-webkit-scrollbar-thumb {
     color: var(--gris);
     font-size: 22px;
 }
+
+footer{
+background-color: var(--orange);
+height: 20vh;
+}
